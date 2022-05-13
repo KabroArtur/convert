@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import CurrencyRow from "./components/CurrencyInput";
+import CurrencyInput from "./components/CurrencyInput";
 
 import Header from './components/Header';
 
@@ -63,7 +63,7 @@ function App() {
           <div className="form-content">
             <div className="item">
             <p>From</p>
-            <CurrencyRow
+            <CurrencyInput
               currencyOptions={currencyOptions}
               selectedCurrency={fromCurrency}
               onchangeCurrency={(e) => {
@@ -75,7 +75,7 @@ function App() {
             </div>
             <div className="item">
             <p>TO</p>
-            <CurrencyRow
+            <CurrencyInput
               currencyOptions={currencyOptions}
               selectedCurrency={toCurrency}
               onchangeCurrency={(e) => {
