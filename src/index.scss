@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Poppins';
+}
+
+header{
+  position: relative;
+  width: 100%;
+  top: 50px;
+}
+
+.container{
+  margin: 0 auto; 
+  padding: 0 20px; 
+  max-width: 1250px; 
+  position: relative;
+}
+
+.row{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+}
+.left, .right{
+  grid-column: span 6;
+}
+.right{
+  display: flex;
+  justify-content: flex-end;
+}
+.content{
+  display: flex;
+
+  & p{
+    margin-left: 24px;
+    position: relative;
+    font-size: 24px;
+    font-weight: 600;
+
+    &:first-child{margin-left: 0;}
+
+    &::before{
+      content: '1 UAH';
+      position: absolute;
+      top: -16px;
+      left: 0;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}
+
+input, select{
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid rgb(110, 110, 110);
+  border-radius: 6px;
+  margin: 4px;
+}
+.form{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 150px;
+}
+
+.item{
+  margin-bottom: 24px;
+
+  &:last-child{margin-bottom: 0;}
+}
+.form-content{
+  background-color: rgb(237, 237, 237);
+  padding: 4%;
+  border-radius: 12px;
+}
